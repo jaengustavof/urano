@@ -1,0 +1,2487 @@
+/* FUENTES PERSONALIZADAS */
+@font-face {
+	font-family: ''; /*nombre de tipografia entre comillas*/
+	src: url('') format(''); /*.otf >> format:'opentype' | .ttf >> format: 'truetype'*/
+    /*google fonts se importa desde google. No se utiliza link
+    
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+    
+    </style>
+
+    */
+}
+
+
+
+/* VARIABLES */
+
+:root {}
+
+/* CSS COMUN */
+
+*{
+	
+	box-sizing: border-box;
+
+
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat';
+}
+
+h1 {
+	font-size: 64px;
+}
+
+nav {
+	width: 100%;
+	height: 118px;
+	background: #3F51B5;
+	color: white;
+
+}
+
+.contenedor {
+	max-width: 1450px;
+	height: 100%;
+	margin: auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo, .menu {
+	height: 100%;
+	width: 50%;
+	padding-left: 40px;
+	display: flex;
+	align-items: center;
+
+}
+
+
+.menu {
+	justify-content: center;
+	margin-right: 7%;
+
+}
+
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: medium;
+	padding-left: 40px;
+	font-family: 'Montserrat';
+}
+
+.menu a:hover {
+	color: dodgerblue;
+}
+
+
+
+#menu{
+	/*Estas dos lineas lo hacen vertical*/
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.4);
+	position: absolute;
+	z-index: 99;
+	top: 0px;
+	left: 0px;
+
+	/* trasnform cambia el sentido de horizonal a vertical*/
+	transform: translate(-100%, 0%);
+
+	transition: 0.5s;/*tiempo en el que se realiza el cambio*/
+	display: flex;
+	align-items: center;
+}
+
+
+#menu div{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transform: translate(-200%, 100%);
+	font-family: 'Montserrat';
+	color: white;
+	cursor: pointer;
+}
+
+#menu ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	/* flex-direction lo presenta en columna*/
+	flex-direction: column;
+
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+
+#menu ul li{
+	padding: 10%;
+}
+
+
+#menu a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Montserrat';
+	font-size: 30px;
+}
+
+.fa-ellipsis-v {
+	
+	font-size: 25px;
+	margin-right: 10px;
+	background: transparent !important;
+	margin-right: 30px;
+}
+
+header {
+	width: 100%;
+	height: 882px;
+	background: #0B162B;
+}
+
+.textoHeader, .imagenHeader {
+	height: 100%;
+	width: 50%;
+	color: white;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.textoHeader p {
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 36px;
+	width: 85%;
+	font-family: 'PT Serif', serif;
+}
+
+
+.formHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.formHeader input {
+	width: 450px;
+	height: 60px;
+	background: #5558DB;
+	border-radius: 5px;
+	border: 1px solid #DADADA;
+	padding: 0px 10px;
+	
+}
+
+.formHeader input::placeholder {
+	color: #0B162B;
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.formHeader button {
+	width: 210px;
+	height: 60px;
+	background: #5558DB;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	transition: 0.5s;
+	
+}
+
+
+.formHeader button:hover {
+	background: white;
+	border: 1px solid #5558DB;
+	color: #5558DB;
+	transition: 0.5s;
+}
+
+.textoSecHeader {
+	font-size: 16px;
+	font-family: 'PT Serif', serif;
+	opacity: 50%;
+}
+
+.imagenHeader {	
+	display: flex;
+	align-items: flex-end;
+}
+
+.imagenHeader img {
+	height: 700px;
+	
+}
+
+.empresas {
+	width: 100%;
+	height: 160px;
+}
+
+.marcas {
+	width: 95%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.features {
+	width: 100%;
+	height: 566px;
+}
+
+.ventajas {
+	width: 450px;
+	height: 370px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 7px;
+	transition: 0.5s;
+
+}
+
+.ventajas h3 {
+
+	font-family: 'Montserrat';
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 48px;
+	color: #0B162B;
+}
+
+.ventajas p {
+
+	font-family: 'PT Serif', serif;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #0B162B;
+	height: 120px;
+	text-align: center;
+}
+
+
+.ventajas:hover {
+	box-shadow:  20px 20px 60px #d9d9d9, 
+             -20px -20px 60px #ffffff;
+    transition: 0.5s;
+}
+
+
+.infoAction {
+	width: 100%;
+	height: 750px;
+	background: #F8F8F8;
+}
+
+.infoImagen, .infoTexto {
+	width: 50%;
+	height: 100%;
+	padding: 40px;
+}
+
+.infoImagen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.infoImagen img {
+	width: 100%;
+}
+
+
+.infoTexto {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;	
+}
+
+.infoTexto h2 {
+	font-family: 'Montserrat';
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #0B162B;
+	width: 570px;
+
+ }
+
+ .infoTexto p {
+
+ 	font-family: 'PT Serif', serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: #0B162B;
+	font-weight: normal;
+	width: 570px;
+
+ }
+
+
+ .infoTexto button {
+	width: 331px;
+	height: 60px;
+	background: #5558DB;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	cursor: pointer;
+
+	margin-top: 40px;
+	transition: 0.5s;
+	
+}
+
+
+.infoTexto button:hover {
+	background: white;
+	border: 1px solid #5558DB;
+	color: #5558DB;
+	transition: 0.5s;
+}
+
+
+.paises {
+	width: 100%;
+	height: 770px;
+	margin-top: 100px;
+
+}
+
+.paisesTexto, .paisesImagen {
+	width: 50%;
+	height: 100%;
+
+}
+
+.paisesTexto {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.paisesTexto h3 {
+	font-family: 'Montserrat';
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #0B162B;
+	width: 570px;
+	line-height: 48px;
+	width: 570px;
+
+}
+
+.paisesTexto p {
+	font-family: 'PT Serif', serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: #0B162B;
+	font-weight: normal;
+	width: 570px;
+
+}
+
+ .paisesTexto button {
+	width: 331px;
+	height: 60px;
+	background: #5558DB;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	margin-top: 40px;
+	transition: 0.5s;
+	
+}
+
+.paisesTexto button:hover {
+	background: white;
+	border: 1px solid #5558DB;
+	color: #5558DB;
+	transition: 0.5s;
+}
+
+.paisesImagen {
+	background-image: url('../rsc/img/world-map.png');
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.banderas {
+
+	width: 270px;
+	height: 270px;
+
+	position: relative;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+
+	display: grid;
+	grid-template-columns: 30%;
+	grid-template-rows: 25%;	
+	grid-template-areas: 
+		"a b c"
+		"d e f"
+		"g h i"
+		"j k l";
+
+
+}
+
+.pais {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 65px;
+	place-self: center;
+	box-shadow:  6px 6px 12px #d2d2d2, 
+             -6px -6px 12px #ffffff;
+    border-radius: 5px;
+
+}
+
+
+
+.Us {
+	grid-area: a;
+	background-image: url('../rsc/img/SVG Layer.png');
+	
+}
+
+.Gb {
+	grid-area: b;
+	background-image: url('../rsc/img/surface1.png');
+
+}
+
+.Is {
+	grid-area: c;
+	background-image: url('../rsc/img/surface1-7.png');
+
+}
+
+.Al {
+	grid-area: d;
+	background-image: url('../rsc/img/surface1-1.png');
+
+}
+
+.Ru {
+	grid-area: e;
+	background-image: url('../rsc/img/surface1-3.png');
+
+}
+
+.Li {
+	grid-area: f;
+	background-image: url('../rsc/img/surface1-6.png');
+
+}
+
+.Fr {
+	grid-area: g;
+	background-image: url('../rsc/img/surface1-2.png');
+
+}
+
+.Ca {
+	grid-area: h;
+	background-image: url('../rsc/img/surface1-4.png');
+
+}
+
+.Su {
+	grid-area: i;
+	background-image: url('../rsc/img/surface1-8.png');
+
+}
+
+.Ko {
+	grid-area: j;
+	background-image: url('../rsc/img/Layer_1.png');
+
+}
+
+.Jp {
+	grid-area: k;
+	background-image: url('../rsc/img/surface1-5.png');
+
+}
+
+
+.Br {
+	grid-area: l;
+	background-image: url('../rsc/img/surface1-9.png');
+
+}
+
+.precios {
+	width: 100%;
+	height: 834px;
+	background-color: #F8F8F8;
+
+}
+
+.contenedorPrecios {
+	width: 927px;
+	height: 601px;
+	margin-top: 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 80px;
+}
+
+.tarifa {
+	height: 594px;
+	width: 450px;
+	background: white;
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.tarifa:hover {
+	box-shadow:  20px 20px 60px #d9d9d9, 
+             -20px -20px 60px #ffffff;
+    transition: 0.5s;
+}
+
+
+.tarifa img {
+	margin: auto;
+}
+
+.infoTarifa {
+	height: 80%;
+	width: 90%;
+	
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+.tarifa h3 {
+	font-size: 36px;
+	font-family: 'Montserrat';
+	color: #0B162B;
+	font-weight: bold;
+	line-height: 48px;
+	margin: auto;
+	margin-top: -20px;
+
+}
+
+
+.tarifa h2 {
+	font-size: 72px;
+	font-family: 'Montserrat';
+	color: #0B162B;
+	font-weight: bold;
+	line-height: 90px;
+	margin: auto;
+	margin-top: -20px;
+
+}
+
+.tarifa p {
+	font-size: 18px;
+	font-family: 'PT Serif', serif;
+	color: #0B162B;
+	font-weight: normal;
+	line-height: 30px;
+	margin: auto;
+	margin-top: -20px;
+
+}
+
+.tarifa ul {
+	list-style-type: none;
+	list-style-image: url('../rsc/img/Group 2.svg');
+}
+
+.tarifa li {
+	font-size: 18px;
+	font-family: 'PT Serif', serif;
+	color: #0B162B;
+	font-weight: normal;
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+
+.enterpriseText {
+	
+	font-family: 'PT Serif', serif;
+	color: #0B162B;
+	opacity: 0.6;
+	margin: auto;
+	position: relative;
+	bottom: 10%;
+	text-align: center;
+	
+}
+
+footer {
+	background: #0B162B;
+	width: 100%;
+	height: 746px;
+
+}
+
+.contenedorFooter {
+	max-width: 1450px;
+	height: 100%;
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footerText {
+	height: 45%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgba(255,255,255, 0.4);
+}
+
+.footerTextTexto {
+	width: 50%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.footerTextTexto h2{
+	font-size: 48px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	line-height: 60px;
+	color: #ffffff;
+}
+
+
+.footerTextTexto p {
+		font-size: 22px;
+	font-family: 'PT Serif', serif;
+	color: #ffffff;
+	font-weight: normal;
+	line-height: 30px;
+	margin-top: 5px;
+}
+
+
+.footerTextFormulario {
+	width: 50%;
+	height: 100%;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+
+.footerTextFormulario input {
+	width: 450px;
+	height: 60px;
+	background: #5558DB;
+	border-radius: 5px;
+	border: 1px solid #DADADA;
+	padding: 0px 10px;
+	
+}
+
+.footerTextFormulario input::placeholder {
+	color: #0B162B;
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+
+.footerTextFormulario button {
+	width: 210px;
+	height: 60px;
+	background: #5558DB;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	transition: 0.5s;
+	margin-left: 20px;
+	
+}
+
+
+.footerTextFormulario button:hover {
+	background: white;
+	border: 1px solid #5558DB;
+	color: #5558DB;
+	transition: 0.5s;
+}
+
+.footerEnlaces {
+	height: 55%;
+	width: 100%;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.footerEnlaces div {
+	width: 18%;
+	height: 100%;
+}
+
+.footerFeatures {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.footerFeatures h4 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.footerFeatures ul {
+	padding: 0px;
+}
+
+.footerFeatures ul li {
+	list-style-type: none;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: 'PT Serif', serif;
+	line-height: 40px;
+	color: #ffffff;	
+	opacity: 0.5;
+	margin-top: 5px;
+	transition: 0.5s;
+	cursor: pointer;
+
+}
+
+
+.footerFeatures ul li:hover {
+
+	opacity: 1;
+	transition: 0.5s;
+}
+
+
+
+
+
+
+/*********************************************************************/
+/************************    FEATURES    *****************************/
+/*********************************************************************/
+
+
+.featuresHeader {
+	width: 100%;
+	height: 100%;
+	padding: 80px 0px;
+    margin-top: 80px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+
+.featuresHeader p {
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 36px;
+	width: 85%;
+	font-family: 'PT Serif', serif;
+	text-align: center;
+}
+
+
+.featuresHeader h4 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: auto;
+
+	font-family: 'Montserrat';
+}
+
+
+.featuresHeader button {
+
+	width: 450px;
+	height: 60px;
+	background: #5558DB;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	transition: 0.5s;	
+	margin-top: 40px;	
+}
+
+.featuresHeader button:hover {
+	background: white;
+	border: 1px solid #5558DB;
+	color: #5558DB;
+	transition: 0.5s;
+}
+
+.moreHeader {
+	width: 400px;
+	height: 50px;
+	margin: auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: -150px;
+}
+
+
+.moreHeader img {
+	margin-right: 10px;
+}
+
+
+.featuresA {
+	width: 100%;
+	height: 536px;
+}
+
+
+.section1FeaturesA {
+	width: 45%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+
+
+
+.section1FeaturesA img {
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+
+.section1FeaturesA h3 {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 48px;
+	font-family: 'Montserrat';
+	color: #0B162B;
+}
+
+
+.section1FeaturesA p {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+	font-family: 'PT Serif', serif;
+	color: #0B162B;
+	opacity: 0.5;
+}
+
+
+.featuresVideo {
+	width: 100%;
+	height: 750px;
+	background: #F8F8F8;
+}
+
+
+.featuresVideoInfo {
+	height: 690px;
+	width: 45%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+
+
+
+.featuresVideoInfo h2 {
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 60px;
+	font-family: 'Montserrat';
+	color: #0B162B;
+}
+ 
+
+.featuresVideoInfo img {
+	width: 100%;
+}
+
+
+.featuresVideoInfo p {
+
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+	font-family: 'PT Serif', serif;
+	color: #0B162B;
+	opacity: 0.5;
+
+}
+
+
+.featuresVideoInfo button {
+	width: 450px;
+	height: 60px;
+	background: #5558DB;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	transition: 0.5s;
+	margin-top: 40px;	
+}
+
+
+.featuresVideoInfo button:hover {
+	background: white;
+	border: 1px solid #5558DB;
+	color: #5558DB;
+	transition: 0.5s;
+}
+
+
+.featuresMId {
+	width: 100%;
+	height: 1200px;
+}
+
+
+.responsiveFeatures, .featuresPhoneImages {
+	height: 100%;
+	width: 33%;
+}
+
+.responsiveFeatures {
+	padding: 60px;
+}
+
+.featuresPhoneImages {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contResponsiveFeatures {
+	width: 100%;
+	height: 50%;
+
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contResponsiveFeatures h3 {
+	font-family: 'Montserrat';
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 48px;
+	color: #0B162B;
+}
+
+.contResponsiveFeatures p{
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+	font-family: 'PT Serif', serif;
+	color: #0B162B;
+	opacity: 0.5;
+}
+
+
+.featuresPlanes {
+	width: 100%;
+	height: 1068px;
+	background: #F8F8F8;
+}
+
+.textoInicialPlanes {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+	font-family: 'PT Serif', serif;
+	color: #0B162B;
+	opacity: 0.5;
+	text-align: center;
+	margin: auto;
+
+	position: relative;
+	top: 184px;
+}
+
+.tipoPlan {
+	width: 30%;
+	height: 608px;
+	border-radius: 7px;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 10px 0px;
+	background: #ffffff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;	
+
+	transition: 0.8s;	
+}
+
+.tipoPlan h3 {
+	font-size: 36px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	line-height: 48px;
+	color: #0B162B;
+}
+
+.tipoPlan h2 {
+	font-size: 72px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	line-height: 0px;
+	color: #0B162B;
+}
+
+.tipoPlan p {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+	font-family: 'PT Serif', serif;
+	color: #0B162B;
+	opacity: 0.5;
+	text-align: center;
+	margin: auto;
+	width: 90%;
+}
+
+.tipoPlan button {
+	width: 210px;
+	height: 60px;
+	background: #5558DB;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	transition: 0.5s;
+	margin-top: 20px;
+	margin-bottom: 20px;	
+}
+
+.tipoPlan button:hover {
+	background: white;
+	border: 1px solid #5558DB;
+	color: #5558DB;
+	transition: 0.5s;
+}
+
+
+
+
+
+/**************** Pricing *********************/
+/**************** Pricing *********************/
+/**************** Pricing *********************/
+
+
+
+.pricingHeader{
+
+	width: 100%;
+	height: 798px;
+	background-image: url('../rsc/img/pricing.webp');
+	background-size: cover;
+	background-position: center;
+
+}
+
+.contenedorPricing {
+
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.pricingHeader h1 {
+	font-size: 64px;
+	line-height: 72px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	text-align: center;
+	color: white;
+
+}
+
+.pricingHeader p {
+	font-size: 22px;
+	line-height: 36px;
+	font-family: 'PT Serif', serif; 
+	color: white;
+	font-weight: normal;
+
+}
+
+.preciosExplicacion {
+	width: 100%;
+	height: 973px;
+}
+
+
+.preciosExplicacion .contenedor {
+	justify-content: space-around;
+	padding: 0px 176px;
+	height: 823px;
+	margin-top: -219px;
+}
+
+.contenedorTarifa {
+	height: 647px;
+	width: 326px;
+	border-radius: 10px;
+	background: white;
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow:  4px 4px 15px rgba(0,0,0,0.2),
+				-4px -4px 15px rgba(0,0,0,0.2);
+            
+}
+
+.precioCondiciones {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.precioCondiciones h3 {
+	font-size: 17px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	line-height: 25px;
+	color: #0B162B;
+	letter-spacing: 20px;
+	text-align: center;
+	width: 135px;
+}
+
+.precioCondiciones h2 {
+	font-size: 60px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	line-height: 0px;
+	color: #0B162B;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.moneda {
+	font-size: 34px;
+}
+
+.precioCondiciones h4 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	color: crimson;
+	margin-top: -15px;	
+	text-align: center;
+}
+
+.precioFeatures {
+	width: 100%;
+	height: 347px;
+	padding: 10px 30px;
+	margin-top: 0px;
+}
+
+.precioFeatures ul {
+	margin: 0px;
+}
+
+.precioFeatures li {
+	font-size: 18px;
+	line-height: 35px;
+	font-family: 'PT Serif', serif; 
+	color: #0B162B;
+	opacity: 0.7;
+	font-weight: normal;
+	list-style-type: none;
+	list-style-image: url('../rsc/img/Group 2.png');
+}
+
+.botonFeatures {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.botonFeatures button {
+	width: 180px;
+	height: 50px;
+	background: #5558DB;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	transition: 0.5s;
+	
+}
+
+.botonFeatures button:hover {
+	background: white;
+	border: 1px solid #5558DB;
+	color: #5558DB;
+	transition: 0.5s;
+}
+
+.formasDePago {
+	max-width: 1450px;
+	height: 140px;
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	margin-top: -75px;
+}
+
+.formasDePago h4 {
+	font-size: 18px;
+	line-height: 25px;
+	font-family: 'Montserrat', serif; 
+	color: #0B162B;
+}
+
+
+
+.goPro {
+	width: 100%;
+	height: 1400px;
+	background: #F8F8F8;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 0px;
+}
+
+.goPro h4 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	color: crimson;
+	letter-spacing: 4px;
+	text-align: center;
+
+}
+
+.goPro h2 {
+	font-size: 60px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	line-height: 0px;
+	color: #0B162B;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.goPro .contenedor {
+
+	width: 1040px;
+	
+	margin-top: 80px;
+}
+
+.goFeatures {
+	height: 100%;
+	width: 60%;
+}
+
+.goBasicCheck {
+	height: 100%;
+	width: 20%;
+	
+}
+
+.goProCheck {
+	height: 100%;
+	width: 20%;
+	
+}
+
+.tituloGo {
+	font-size: 22px;
+	color: #0B162B;
+	line-height: 35px;
+	text-align: center;
+}
+
+
+
+.goFeatures ul, .goBasicCheck ul, .goProCheck ul {
+
+	padding: 0px;
+}
+
+.goFeatures li{
+	list-style-type: none;
+	padding: 30px 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	font-size: 22px;
+	line-height: 36px;
+	font-family: 'PT Serif', serif; 
+	color: rgba(11, 22, 43, 0.5);	
+	font-weight: normal;
+	
+}
+
+.goBasicCheck li, .goProCheck li {
+	list-style-type: none;
+	padding: 22px 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	text-align: center;
+}
+
+.fa-times {
+	color: rgba(11, 22, 43, 0.1);
+	font-size: 52px;
+}
+
+
+/******CONTACTO******/
+/******CONTACTO******/
+/******CONTACTO******/
+
+
+.formularioContacto {
+	width: 100%;
+	height: 100vh;
+	background:linear-gradient(rgba(11, 22, 43, 0.4), rgba(11, 22, 43, 0.4)),url("../rsc/img/contacto.webp");
+	background-size: cover;
+	background-position: center;
+}
+
+.formularioContacto .contenedor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.formulario {
+	transition: 1s;
+	width: 850px;
+	height: 700px;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 60%;
+	left: 50%;
+	/*background:linear-gradient(rgba(11, 22, 43, 0.5), rgba(11, 22, 43, 0.5)),url("../rsc/img/contacto.webp");*/
+	background: rgba(11, 22, 43, 0.8);
+	border-radius: 10px;
+	box-shadow: 7px 7px 7px rgba(11, 22, 43, 0.5),
+					-7px -7px 7px rgba(11, 22, 43, 0.5);
+	
+}	
+
+.frente{
+	width: 850px;
+	height: 700px;	
+	border-radius: 10px;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	z-index: 1;	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.frente form {
+		display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.frente form input, .frente form textarea {
+	width: 600px;
+	height: 60px;
+	background: #5558DB;
+	border-radius: 5px;
+	border: 1px solid #DADADA;
+	padding: 0px 10px;
+	color: rgba(255,255,255,0.5);
+	font-family: 'Montserrat';
+	font-size: 18px;
+}
+
+.frente form textarea {
+	padding: 20px 10px !important;
+}
+
+.frente form textarea { 
+	width: 600px;
+	height: 220px;
+	background: #5558DB;
+	border-radius: 5px;
+	border: 1px solid #DADADA;
+	padding: 0px 10px;
+}
+
+.frente form button {
+	width: 600px;
+	height: 50px;
+	background: #5558DB;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	transition: 0.5s;
+	margin-top: 40px;	
+}
+
+.frente form button:hover {
+	background: white;
+	border: 1px solid #5558DB;
+	color: #5558DB;
+	transition: 0.5s;
+}
+
+.frente form input::placeholder, .frente form textarea::placeholder {
+	color: rgba(255,255,255,0.5);
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.reverso {
+	width: 850px;
+	height: 700px;	
+	border-radius: 10px;
+	position: absolute;	
+	top: 50%;
+	left: 50%;
+	z-index: 0;
+	background: rgba(255,255,255, 0.8);
+
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: translate(-50%,-50%) rotateY(180deg);	
+}
+
+.formulario h2 {
+	font-size: 40px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	line-height: 0px;
+	color: #0B162B;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.fa-check-circle {
+	font-size: 90px;
+	color: green;
+	margin-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+
+/* SMART TV */
+@media screen and (min-width: 1921px) {
+
+	.menuMobile {
+		display: none;
+	}
+} 
+/* DESKTOP */
+@media screen and (max-width: 1920px) {
+
+	.menuMobile {
+		display: none;
+	}
+}  
+/* laptop */
+@media screen and (max-width: 1024px) {
+
+	.menuMobile {
+		display: none;
+	}
+}
+/* tablet */
+@media screen and (max-width: 768px) {
+
+	.menuMobile {
+		display: none;
+	}
+
+	
+	h1 {
+		font-size: 54px;
+	}
+
+	/******************INDEX******************/
+	/******************INDEX******************/
+	/******************INDEX******************/
+
+	/*****Header****/
+	header {
+		height: 1270px;
+	}
+
+	header .contenedor {
+		flex-direction: column-reverse;
+	}
+
+	.textoHeader, .imagenHeader {
+		width: 90%;
+		height: auto;
+	}
+
+	header p{
+		font-size: 16px;
+	}
+
+
+	.imagenHeader {
+		align-items: center;
+	}
+
+	.formHeader input {
+		width: 400px;
+	}
+
+
+	/***Section empresa***/
+	.empresas {
+		height: 345px;
+		margin-top: 40px;
+	}
+
+	.marcas {
+		flex-wrap: wrap;
+		width: auto;
+	}
+
+	.marcas img {
+		width: 33%;
+		margin: 3%;
+	}
+
+	.ventajas  h3 {
+		font-size: 23px;
+	}
+
+	/***Ventajas***/
+	.ventajas p {
+		font-size: 16px;
+	}
+
+
+
+	/***InfoAction***/
+	.infoAction {
+		height: 885px;
+	}
+
+	.infoTexto h2 {
+		font-size: 40px;
+	}
+
+	.infoTexto p {
+		font-size: 16px;
+	}
+
+	.infoAction .contenedor {
+		flex-direction: column;
+	}
+
+	.infoImagen, .infoTexto {
+		width: 90%;
+	}
+
+
+	/***paises***/
+	.paises {
+		margin-top: 40px;
+		height: 1000px;
+	}
+
+	.paises .contenedor {
+		flex-direction: column-reverse;
+	}
+
+	.paisesImagen {
+		width: 100%;
+	}
+
+	.paisesTexto {
+		width: 90%;
+		padding: 40px;
+	}
+
+	.paisesTexto p {
+		font-size: 16px;
+	}
+
+
+	/***Precios***/
+
+	.precios {
+		height: 623px;
+	}
+
+	.tarifa{
+		width: 40%;
+		height: 77%;
+		padding: 0px;
+		box-shadow:  20px 20px 60px #d9d9d9, 
+             -20px -20px 60px #ffffff;
+	}
+
+	.contenedorPrecios {
+		justify-content: space-around;
+	}
+
+	.infoTarifa {
+		height: 100%;
+	}
+
+	.infoTarifa  h2 {
+		font-size: 40px;
+	}
+
+	.infoTarifa  p {
+		font-size: 16px;
+	}
+
+
+	.infoTarifa  h3 {
+		font-size: 23px;
+	}
+
+	.tarifa li {
+		font-size: 16px;
+	}
+
+
+	/***Footer***/
+
+	.footerText{
+		flex-direction: column;
+	}
+
+	.footerTextTexto {
+		width: 90%;
+	}
+
+	.footerTextTexto  h2 {
+		font-size: 40px;
+	}
+
+	.footerTextTexto  p {
+		font-size: 16px;
+	}
+
+	.footerTextFormulario {
+		width: 90%;
+		justify-content: flex-start;
+	}
+
+	.footerTextFormulario input {
+		width: 400px;
+	}
+
+	.footerEnlaces {
+		justify-content: center;
+		padding: 20px;
+	}
+
+	.footerEnlaces div{
+		width: 25%;
+	}
+
+	.footerFeatures ul li {
+		font-size: 16px;
+	}
+
+
+/******************FEATURES******************/
+/******************FEATURES******************/
+/******************FEATURES******************/
+
+/*header*/
+
+	.headerDePaginaFeatues {
+		height: 900px;
+	}
+
+	.featuresHeader h1 {
+		text-align: center;
+	}
+
+
+/*featuresA*/
+	
+	.featuresA {
+		height: 900px;
+	}
+
+	.featuresA .contenedor {
+		flex-direction: column;
+	}
+
+
+	.section1FeaturesA {
+		width: 90%;
+		text-align: center;
+		align-items: center;
+	}
+
+/*featuresVideo*/
+	
+	.featuresVideo {
+		height: 1000px;
+	}
+
+	.featuresVideo .contenedor {
+		flex-direction: column-reverse;
+	}
+
+	.featuresVideoInfo {
+		width: 90%;
+		align-items: center;
+		text-align: center;
+	}
+
+
+/*featuresVideoInfo*/
+
+
+	.featuresMId {
+		height: 2300px;
+	}
+
+	.featuresMId .contenedor {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.responsiveFeatures, .featuresPhoneImages {
+		width: 90%;
+	}
+
+	.featuresPhoneImages img {
+		height: 60%;
+	}
+
+/*featuresPlanes*/
+	
+	.featuresPlanes {
+		height: 824px;
+	}
+
+	.featuresPlanes .conenedor {
+		width: 98%;
+	}
+
+	.tipoPlan {
+		width: 33%;
+	}
+	.tipoPlan h2 {
+		font-size: 45px;
+		justify-content: space-between;
+	}
+
+	.textoInicialPlanes {
+		top: 67px;
+	}
+
+
+
+/******************PRICING******************/
+/******************PRICING******************/
+/******************PRICING******************/
+
+/*header*/
+		
+	.pricingHeader {
+		height: 700px;
+	}
+	.pricingHeader .contenedor {
+		width: 95%;
+	}
+
+	.pricingHeader .contenedor h1 {
+		font-size: 54px;
+	}
+
+/*preciosExplicacion*/
+
+	.preciosExplicacion{
+		height: 900px;
+	}
+
+	.preciosExplicacion .contenedor {
+		padding: 0px;
+		width: 95%;
+	}
+
+	.contenedorTarifa {
+		width: 33%;
+	}
+
+	.precioCondiciones h3 {
+		font-size: 15px;
+	}
+
+	.precioCondiciones h2 {
+		font-size: 40px;
+	}
+
+	.moneda {
+    	font-size: 20px;
+	}		
+
+	.precioFeatures {
+	    padding: 10px 10px;
+	}
+
+	.precioFeatures li {
+		font-size: 16px;
+	}
+
+	.contenedorTarifa {
+    	height: 671px;
+	}
+
+/*goPro*/
+
+	.goPro h2 {
+		font-size: 40px;
+	}
+
+	.goPro .contenedor {
+    	width: 95%;  
+	}
+
+	.goFeatures li {
+		font-size: 16px;
+	}
+
+}
+
+
+
+
+
+
+
+
+/* smart phone */
+@media screen and (max-width: 478px) {
+	.menuMobile {
+	display: block;
+}
+body{
+	overflow-y: none;
+}
+
+
+/******************INDEX******************/
+/******************INDEX******************/
+/******************INDEX******************/
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+p {
+	font-size: 18px;
+}
+
+/**Menu**/
+
+.menu {
+	display: none;
+}
+
+
+/**Header**/
+
+header {
+	height: 1000px;
+
+
+}
+
+.formHeader {
+	flex-direction: column;
+}
+
+.formHeader input {
+	width: 295px;
+	margin-bottom: 40px;
+}
+
+.textoHeader p {
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+
+}
+
+
+.imagenHeader img {
+	height: auto;
+	width: 95%;
+
+}
+
+
+/**Features**/
+.features {
+	height: 1000px;
+	margin-top: 50px;
+}
+
+.features .contenedor {
+	flex-direction: column;
+}
+
+.ventajas {
+	width: auto;
+}
+
+
+/**infoAction**/
+
+.infoTexto {
+	padding: 20px;
+}
+
+.infoTexto h2, .infoTexto p {
+	width: auto;
+	text-align: center;
+}
+
+.infoTexto button {
+	width: auto;
+}
+
+
+/**Paises**/
+
+
+.paises {
+	margin-top: 21px;
+}
+
+.paisesTexto {
+	padding: 20px;
+}
+.paises h3 {
+	font-size: 25px;
+	width: auto;	
+	text-align: center;
+}
+
+.paises p {
+	width: auto;	
+	text-align: center;
+}
+
+.paises button {
+	width: auto;
+}
+
+.banderas {
+	left: 52%;
+}
+
+
+/**Tarifa**/
+/**Tarifa**/
+/**Tarifa**/
+
+.precios {
+	height: 1300px;
+}
+
+.precios .contenedor {
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.contenedorPrecios {
+	flex-direction: column;
+	align-items: center;
+	height: 80%;
+	margin: 0px;
+}
+
+.tarifa { 
+	height: 479px;
+	width: 35%;
+ }
+
+
+ .enterpriseText {
+ 	font-size: 16px;
+ 	width: 90%;
+ }
+
+ /**footer**/
+ /**footer**/
+ /**footer**/
+
+footer {
+	height: 2000px;
+}
+
+.footerText {
+	height: 25%;
+}
+
+.footerTextTexto h2 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.footerTextTexto p {
+	font-size: 18px;
+	text-align: center;
+}
+
+.footerTextFormulario {
+	flex-direction: column;
+
+}
+
+.footerTextFormulario input {
+	width: 295px;
+	margin-bottom: 40px;
+}
+
+.footerTextFormulario button {
+	margin: 0px;
+}
+
+
+.footerEnlaces {
+	flex-direction: column;
+	height: 75%;
+	width: 100%;
+}
+
+.footerEnlaces div {
+    width: 100%;
+}
+
+
+/******************FEATURES******************/
+/******************FEATURES******************/
+/******************FEATURES******************/
+
+
+/**Header**/
+/**Header**/
+/**Header**/
+
+.headerDePaginaFeatues {
+	height: 730px!important;
+	text-align: center;
+}
+
+.headerDePaginaFeatues button {
+	width: 295px;
+}
+
+.featuresHeader {
+	padding: 0;
+}
+
+.moreHeader {
+	bottom: 0;
+	height: 33px;
+	width: auto;
+}
+
+.featuresVideoInfo button {
+	width: 
+}
+
+/**FeaturesA**/
+/**FeaturesA**/
+/**FeaturesA**/
+
+.featuresA {
+	height: 900px;
+	margin: 40px 0;
+}
+
+.featuresA .contenedor {
+	flex-direction: column;
+}
+
+.section1FeaturesA {
+	width: 90%;
+	text-align: center;
+	height: 50%;
+	margin-bottom: 60px;
+}
+
+.section1FeaturesA img {
+	margin: auto;
+}
+
+
+/**FeaturesVideo**/
+/**FeaturesVideo**/
+/**FeaturesVideo**/
+
+.featuresVideo {
+	height: 850px;
+}
+
+.featuresVideo .contenedor {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.featuresVideoInfo {
+	width: 90%;
+	text-align: center;
+	height: 400px;
+}
+
+.featuresVideoInfo h2 {
+	font-size: 30px;
+}
+
+
+/**FeaturesMId**/
+/**FeaturesMId**/
+/**FeaturesMId**/
+
+.featuresVideoInfo button {
+	width: 295px;
+	margin: auto;
+}
+
+.featuresMId {
+	height: 2000px;
+}
+
+.featuresMId .contenedor {
+	flex-direction: column;
+}
+
+.responsiveFeatures {
+	width: 100%;
+	padding: 0;
+}
+
+.contResponsiveFeatures {
+	width: 90%;
+	text-align: center;
+	margin: auto;
+}
+
+.contResponsiveFeatures h3 {
+	font-size: 22px;
+}
+
+.featuresPhoneImages {
+	width: 100%;
+}
+
+.featuresPhoneImages img {
+	width: 80%;
+}
+
+
+/**featuresPlanes**/
+/**featuresPlanes**/
+/**featuresPlanes**/
+
+.featuresPlanes {
+	height: 1800px;
+	margin: 40px 0px;
+}
+
+.textoInicialPlanes {
+	top: 20px;
+
+}
+
+.featuresPlanes .contenedor {
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.tipoPlan {
+	width: 90%;
+	height: 525px;
+}
+
+.tipoPlan h3 {
+	font-size: 22px;
+}
+
+.tipoPlan h2 {
+	font-size: 40px;
+}
+
+/******************PRICING******************/
+/******************PRICING******************/
+/******************PRICING******************/
+
+/*header*/
+
+.pricingHeader {
+	height: 600px;
+}
+.contenedorPricing {
+	text-align: center;
+}	
+
+.pricingHeader h1 {
+	font-size: 40px !important;
+}
+
+.pricingHeader p {
+	font-size: 18px;
+}
+
+/*preciosExplicacion*/
+
+.preciosExplicacion {
+	height: 2300px;
+}
+
+.preciosExplicacion .contenedor {
+	flex-direction: column;
+	margin-top: -50px;
+	height: 2100px;
+}
+
+.contenedorTarifa {
+    width: 90%;
+}
+
+.precioFeatures {
+    padding: 10px 43px;
+}
+
+.formasDePago {
+	margin-top: 20px;
+	width: 90%;
+}
+
+.formasDePago h4 {
+	text-align: center;
+}
+
+.formasDePago img {
+	width: 90%;
+}
+
+/*goPro*/
+.goPro {
+	height: 1500px;
+	width: 100%;
+	padding: 40px 0px;
+}
+
+.goPro h2 {
+	font-size: 22px;
+}
+
+.primeraLinea, .cuartaLinea, .quintaLinea, .sextaLinea, .septimaLinea, .octavaLinea, .novenaLinea {
+	height: 133px;
+}
+
+.segundaLinea, .terceraLinea {
+	height: 97px;
+}
+
+.goBasicCheck li, .goProCheck li{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.goBasicCheck li img, .goProCheck li img{
+	width: 40px;
+	}
+
+
+
+
+
+
+
+}
+
+
+/* Smart watch */
+@media screen and (max-width: 320px) {}
+
+
+/* ANIMACIONES */
+
+@keyframes animaciones {}

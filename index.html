@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--META-->
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--retrocompatible con microsoft edge-->
+        <meta name="author" content=""><!-- quien hace la pagina web / desarrollador -->
+        <meta name="copyright" content=""><!--derecho de copyright / derechos de explotacion / es a empresa-->
+        <meta name="contact" content=""> <!--se especifica correo electronico de la persona que lleva el mantenimiento del sitio-->
+        <meta name="description" content=""> <!--descripcion de la pagina web-->
+        <meta name="keywords" content=""> <!--palabras clave por las que se indexan-->
+        <meta name="robots" content="NoIndex, NoFollow"> <!--sustituye al robots.txt / el dia que se indexe cambia el content-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">	
+
+
+        <!-- ESTILOS -->
+        <link rel="stylesheet" href="vendor/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="vendor/animateCSS/animate.min.css">
+         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendor/jqueryUI/css/jquery-ui.min.css"> <!-- Conectamos el archivo CSS de JQUERYUI --> <!--Hay que ingresar el script del archivo js en la zona de SCRIPTS (debajo, donde escribiomos javascript)-->
+        <!-- TITULO % LOGO -->
+        <link rel="icon" tyoe="icon/png" href="favicon.png"> <!--va en la carpeta root. El favicon debe llamarse favicon.png. tiene que ser cuadrado. Mismo alto y ancho.-->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+ 
+
+        <title>UranoWeb | Home Page</title>
+
+    </head>
+    <body>
+
+        <nav>
+            <div class="contenedor">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/rsc/img/Logo.png" alt=""></a>
+                </div>
+                <div class="menu">
+                    <a href="features.html">Features</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="contacto.php">Contact</a>
+                </div>
+
+                <div class="menuMobile">
+                   <i class="fas fa-ellipsis-v"onclick="desplegar()"></i>
+                <!-- Vertical por CSS ver archivo -->
+                    <div id="menu">
+                        <div onclick="cerrarMenu()">X</div>
+
+                        <ul>
+                            <li>
+                                <a href="#">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="features.html">Features</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="contacto.php">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="contenedor">
+                <div class="textoHeader">
+                    <h1>Urano Unique Design</h1>
+                    <p>Revolutionizing web design experience with simple to use UI kit filled with many features. It is your UI designer wherever you need him.</p>
+                    <div class="formHeader">
+                        <input type="text" placeholder="Enter your email address">
+                        <button>Get Started!</button>
+                    </div>
+                    <p class="textoSecHeader">Try it for free  •  No credit card required</p>
+                    
+                </div>
+                <div class="imagenHeader">
+                    <img src="assets/rsc/img/Background-Right.webp" alt="">
+                </div>
+            </div>
+        </header>
+
+        <section class="empresas">
+            <div class="contenedor">
+                <div class="marcas">
+                    <img src="assets/rsc/img/news-1.png" alt="">
+                    <img src="assets/rsc/img/news-2.png" alt="">
+                    <img src="assets/rsc/img/news-3.png" alt="">
+                    <img src="assets/rsc/img/news-4.png" alt="">
+                    <img src="assets/rsc/img/news-5.png" alt="">
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="contenedor">
+                <div class="ventajas">
+                    <img src="assets/rsc/img/banwith.png" alt="">
+                    <h3>Responsive Editing</h3>
+                    <p>Building beautiful responsive websites is easy. Urano is responsive by nature and also gives you full control over how your website looks on mobile devices.</p>
+                </div>
+                <div class="ventajas">
+                    <img src="assets/rsc/img/domain.png" alt="">
+                    <h3>Global Elements</h3>
+                    <p>Manage your entire website's design using global elements and website-wide design settings. Urano isn't just a page builder, it's a website design system.</p>
+                </div>
+                <div class="ventajas">
+                    <img src="assets/rsc/img/customerS.png" alt="">
+                    <h3>24/7/365 support</h3>
+                    <p>Your customers are your colleagues, your friends. Communicate in the most natural way, and make ticketing a breeze.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="infoAction">
+            <div class="contenedor">
+                <div class="infoImagen">
+                    <img src="assets/rsc/img/Laptop-1.png" alt="">
+                </div>
+                <div class="infoTexto">
+                    <h2>Hosting for every website.</h2>
+                    <p>Unlimited storage, unmetered bandwidth, unbeatable hosting. We got ya covered, and we’ll throw in a free domain for a year, too.</p>
+                    <button>Get Started!</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="paises">
+            <div class="contenedor">
+                <div class="paisesTexto">
+                    <h3>Urano takes its experience from the international market</h3>
+                    <p>We are present in more than 30 cities around the world, where we are helping to create sustainable communities. 45% of our turnover comes from international markets.</p>
+                    <button>Get Started!</button>
+                </div>
+                <div class="paisesImagen">
+                    <div class="banderas">
+                        <div class="pais Us"></div>
+                        <div class="pais Gb"></div>
+                        <div class="pais Is"></div>
+                        <div class="pais Al"></div>
+                        <div class="pais Ru"></div>
+                        <div class="pais Li"></div>
+                        <div class="pais Fr"></div>
+                        <div class="pais Ca"></div>
+                        <div class="pais Su"></div>
+                        <div class="pais Ko"></div>
+                        <div class="pais Jp"></div>
+                        <div class="pais Br"></div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="precios">
+            <div class="contenedor">
+                <div class="contenedorPrecios">
+                    <div class="tarifa">
+                        <div class="infoTarifa">
+                            <img src="assets/rsc/img/Discount.png" alt="">
+                            <h3>Free</h3>
+                            <h2>$0</h2>
+                            <p>Free Forever</p>
+                            <div class="ventajasTarifa">
+                                <ul>
+                                    <li>Drag and Drop Editor</li>
+                                    <li>Responsive Editing</li>
+                                    <li>40+ Basic Widgets</li>
+                                    <li>30+ Basic Templates</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="tarifa">
+                        <div class="infoTarifa">
+                            <img src="assets/rsc/img/Discount1.png" alt="">
+                            <h3>Premium</h3>
+                            <h2>$25</h2>
+                            <p>Everything in FREE, plus:</p>
+                            <div class="ventajasTarifa">
+                                <ul>
+                                    <li>Theme Builder</li>
+                                    <li>Form Builder</li>
+                                    <li>WooCommerce Builder</li>
+                                    <li>Popup Builder</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="enterpriseText">Enterprise plan is available for larger teams. Get in touch to know more.</p>
+        </section>
+
+        <footer>
+            <div class="contenedorFooter">
+              
+                <div class="footerText">
+                    <div class="footerTextTexto">
+                        <h2>Get started for free</h2>
+                        <p>Join millions of professionals who build websites faster and better than ever before </p>
+                    </div>
+                    <div class="footerTextFormulario">
+                        <input type="text" placeholder="Enter your email address">
+                        <button>Get Started</button>
+                        
+                    </div>
+                </div>
+                <div class="footerEnlaces">
+                    <div class="footerFeatures">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Editor</li>
+                            <li>Design</li>
+                            <li>Marketing</li>
+                            <li>Theme Builder</li>
+                            <li>Popup Builder</li>
+                        </ul>
+                    </div>
+                    <div class="footerFeatures">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li>Community</li>
+                            <li>Add-ons</li>
+                            <li>Showcase</li>
+                            <li>Hosting</li>
+                            <li>Hello Theme</li>
+                        </ul>
+                    </div>
+                    <div class="footerFeatures">
+                        <h4>Support</h4>
+                        <ul>
+                            <li>Help Center</li>
+                            <li>Support</li>
+                            <li>Developers</li>
+                            <li>Contact Us</li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                    <div class="footerFeatures">
+                        <h4>Our Company</h4>
+                        <ul>
+                            <li>Pricing</li>
+                            <li>Careers</li>
+                            <li>Trademark</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </footer>
+
+
+    
+
+                <!--ASI SE IMPLMENTA JQUERY --><!-- JQUERY UI DEBE TENER JQUERY INSTALADO-->
+        <script type="text/javascript" src="vendor/jquery/jquery-3.5.1.min.js"></script> <!--ASI SE IMPLMENTA JQUERY -->
+        <script type="text/javascript" src="vendor/jqueryUI/js/jquery-ui.min.js"></script><!--ASI SE IMPLMENTA JQUERY UI-->
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <noscript>Debe habilitar JavaScript</noscript>
+
+    </body>
+</html>

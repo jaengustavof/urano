@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--META-->
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--retrocompatible con microsoft edge-->
+        <meta name="author" content=""><!-- quien hace la pagina web / desarrollador -->
+        <meta name="copyright" content=""><!--derecho de copyright / derechos de explotacion / es a empresa-->
+        <meta name="contact" content=""> <!--se especifica correo electronico de la persona que lleva el mantenimiento del sitio-->
+        <meta name="description" content=""> <!--descripcion de la pagina web-->
+        <meta name="keywords" content=""> <!--palabras clave por las que se indexan-->
+        <meta name="robots" content="NoIndex, NoFollow"> <!--sustituye al robots.txt / el dia que se indexe cambia el content-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">	
+
+
+        <!-- ESTILOS -->
+        <link rel="stylesheet" href="vendor/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="vendor/animateCSS/animate.min.css">
+         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendor/jqueryUI/css/jquery-ui.min.css"> <!-- Conectamos el archivo CSS de JQUERYUI --> <!--Hay que ingresar el script del archivo js en la zona de SCRIPTS (debajo, donde escribiomos javascript)-->
+        <!-- TITULO % LOGO -->
+        <link rel="icon" tyoe="icon/png" href="favicon.png"> <!--va en la carpeta root. El favicon debe llamarse favicon.png. tiene que ser cuadrado. Mismo alto y ancho.-->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+     
+
+        <title>UranoWeb | Pricing</title>
+
+    </head>
+    <body>
+
+        <nav>
+            <div class="contenedor">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/rsc/img/Logo.png" alt=""></a>
+                </div>
+                <div class="menu">
+                    <a href="features.html">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="contacto.php">Contact</a>
+                </div>
+
+                <div class="menuMobile">
+                   <i class="fas fa-ellipsis-v"onclick="desplegar()"></i>
+                <!-- Vertical por CSS ver archivo -->
+                    <div id="menu">
+                        <div onclick="cerrarMenu()">X</div>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="features.html">Features</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="contacto.php">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="pricingHeader">
+            <div class="contenedor">
+                <div class="contenedorPricing">
+                     <h1>Urano Black Friday Up to 25% OFF!</h1>
+                    <p>Choose Your Subscription Plan And Get Started</p>
+                </div>
+               
+            </div>
+        </header>
+
+        <section class="preciosExplicacion">
+            <div class="contenedor">
+                <div class="contenedorTarifa">
+                    <div class="precioCondiciones">
+                     <h3>BASIC</h3>
+                        <h2>FREE</h2>
+                        <h4>For 1 Site</h4>
+                    </div>
+                    <div class="precioFeatures">
+
+                        <ul>
+                            <li>50+ Pro Widgets</li>
+                            <li>300+ Pro Templates</li>
+                            <li>10+ Website Template Kits</li>
+                            <li>Theme Builder</li>
+                            <li>Form Builder</li>
+                            <li>WooCommerce Builder</li>
+                            <li>Popup Builder</li>
+                            <li>Support for 1 Year</li>
+                            <li>Updates for 1 Year</li>
+                        </ul>
+                    </div>
+                    <div class="botonFeatures">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="contenedorTarifa">
+                    <div class="precioCondiciones">
+                     <h3>PRO</h3>
+                        <h2><span class="moneda">US$</span> 25</h2>
+                        <h4>For 3 Sites</h4>
+                    </div>
+                    <div class="precioFeatures">
+
+                        <ul>
+                            <li>50+ Pro Widgets</li>
+                            <li>300+ Pro Templates</li>
+                            <li>10+ Website Template Kits</li>
+                            <li>Theme Builder</li>
+                            <li>Form Builder</li>
+                            <li>WooCommerce Builder</li>
+                            <li>Popup Builder</li>
+                            <li>Support for 1 Year</li>
+                            <li>Updates for 1 Year</li>
+                        </ul>
+                    </div>
+                    <div class="botonFeatures">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="contenedorTarifa">
+                    <div class="precioCondiciones">
+                     <h3 style="width: 170px;">EXPERT</h3>
+                        <h2><span class="moneda">US$</span> 95</h2>
+                        <h4>For 5 Sites</h4>
+                    </div>
+                    <div class="precioFeatures">
+
+                        <ul>
+                            <li>50+ Pro Widgets</li>
+                            <li>300+ Pro Templates</li>
+                            <li>10+ Website Template Kits</li>
+                            <li>Theme Builder</li>
+                            <li>Form Builder</li>
+                            <li>WooCommerce Builder</li>
+                            <li>Popup Builder</li>
+                            <li>Support for 1 Year</li>
+                            <li>Updates for 1 Year</li>
+                        </ul>
+                    </div>
+                    <div class="botonFeatures">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="formasDePago">
+                <h4>30-Day Money Back Guarantee For New Purchases​</h4>
+                <img src="assets/rsc/img/credit-cards.png" alt="">
+            </div>
+            
+        </section>
+
+        <section class="goPro">
+            <h4>WHY GO PRO?</h4>
+            <h2>Compare Urano Free Vs. Pro</h2>
+            <div class="contenedor">
+                <div class="goFeatures">
+                    <h3 class="tituloGo" style="text-align: left;">Features</h3>
+                    <ul>
+                        
+                       <li>The #1 Drag & Drop Website Builder</li>
+                       <li>30 Basic Widgets</li>
+                       <li>50+ Advanced Widgets</li>
+                       <li>Industry Leading Theme Builder</li>
+                       <li>Design-oriented Popup Builder</li>
+                       <li>Visual Form Builder + Popular Marketing Integrations</li>
+                       <li>WooCommerce Builder + Over 15 Shop Widgets,</li>
+                       <li>Dynamic Content & Custom Fields Capabilities,</li>
+                       <li>Motion Effects Inc. Parallax & Mouse Effects</li>
+                  
+                      
+                    </ul>
+                </div>
+                <div class="goBasicCheck">
+                    <h3 class="tituloGo">Basic</h3>
+                    <ul>
+                       
+                       <li class="primeraLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="segundaLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="terceraLinea"><i class="fas fa-times"></i></li>
+                       <li class="cuartaLinea"><i class="fas fa-times"></i></li>
+                       <li class="quintaLinea"><i class="fas fa-times"></i></li>
+                       <li class="sextaLinea"><i class="fas fa-times"></i></li>
+                       <li class="septimaLinea"><i class="fas fa-times"></i></li>
+                       <li class="octavaLinea"><i class="fas fa-times"></i></li>
+                       <li class="novenaLinea"><i class="fas fa-times"></i></li>
+                      
+                      
+                    </ul>  
+                    
+                </div>
+                <div class="goProCheck">
+                    <h3 class="tituloGo">Pro</h3>
+                    <ul>
+                        
+                       <li class="primeraLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="segundaLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="terceraLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="cuartaLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="quintaLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="sextaLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="septimaLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="octavaLinea"><img src="assets/rsc/img/domain.png" alt=""></li>
+                       <li class="novenaLinea"><img src="assets/rsc/img/domain.png" alt=""></li>                     
+                      
+                    </ul> 
+                </div>
+                
+            </div>
+            
+        </section>
+
+
+
+
+
+
+        <footer>
+            <div class="contenedorFooter">
+              
+                <div class="footerText">
+                    <div class="footerTextTexto">
+                        <h2>Get started for free</h2>
+                        <p>Join millions of professionals who build websites faster and better than ever before </p>
+                    </div>
+                    <div class="footerTextFormulario">
+                        <input type="text" placeholder="Enter your email address">
+                        <button>Get Started</button>
+                        
+                    </div>
+                </div>
+                <div class="footerEnlaces">
+                    <div class="footerFeatures">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Editor</li>
+                            <li>Design</li>
+                            <li>Marketing</li>
+                            <li>Theme Builder</li>
+                            <li>Popup Builder</li>
+                        </ul>
+                    </div>
+                    <div class="footerFeatures">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li>Community</li>
+                            <li>Add-ons</li>
+                            <li>Showcase</li>
+                            <li>Hosting</li>
+                            <li>Hello Theme</li>
+                        </ul>
+                    </div>
+                    <div class="footerFeatures">
+                        <h4>Support</h4>
+                        <ul>
+                            <li>Help Center</li>
+                            <li>Support</li>
+                            <li>Developers</li>
+                            <li>Contact Us</li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                    <div class="footerFeatures">
+                        <h4>Our Company</h4>
+                        <ul>
+                            <li>Pricing</li>
+                            <li>Careers</li>
+                            <li>Trademark</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </footer>
+
+
+    
+
+                <!--ASI SE IMPLMENTA JQUERY --><!-- JQUERY UI DEBE TENER JQUERY INSTALADO-->
+        <script type="text/javascript" src="vendor/jquery/jquery-3.5.1.min.js"></script> <!--ASI SE IMPLMENTA JQUERY -->
+        <script type="text/javascript" src="vendor/jqueryUI/js/jquery-ui.min.js"></script><!--ASI SE IMPLMENTA JQUERY UI-->
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <noscript>Debe habilitar JavaScript</noscript>
+
+    </body>
+</html>
